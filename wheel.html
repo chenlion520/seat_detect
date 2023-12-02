@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Spin</title>
+    <link rel="stylesheet" href="wheel.css" />
+  </head>
+  <body>
+    <div class="mainbox" id="mainbox">
+      <div class="dialog">
+        <button onclick="location.replace('http://127.0.0.1:5500/1.html') ">
+          <img src="photo/escape.png" height="30" width="30" />
+        </button>
+      </div>
+      <div class="box" id="box">
+        <div class="box1">
+          <span class="font span1"><h5>----學餐----</h5></span>
+          <span class="font span2"><h5>----二餐----</h5></span>
+          <span class="font span3"><h5>----一餐----</h5></span>
+          <span class="font span4"><h5>----工餐----</h5></span>
+          <span class="font span5"><h5>---小時光---</h5></span>
+        </div>
+        <div class="box2">
+          <span class="font span1"><h5>---麥當勞---</h5></span>
+          <span class="font span2"><h5>----大業----</h5></span>
+          <span class="font span3"><h5>---早餐店---</h5></span>
+          <span class="font span4"><h5>----瑞麟----</h5></span>
+          <span class="font span5"><h5>---自助餐---</h5></span>
+        </div>
+      </div>
+      <button class="spin" onclick="spin()" id="myButton">SPIN</button>
+    </div>
+    <audio
+      controls="controls"
+      id="applause"
+      src="assets/applause.mp3"
+      type="audion/mp3"
+    ></audio>
+    <audio
+      controls="controls"
+      id="wheel"
+      src="assets/applause.mp3"
+      type="audion/mp3"
+    ></audio>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="wheel.js"></script>
+  </body>
+</html>

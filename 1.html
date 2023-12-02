@@ -1,0 +1,73 @@
+<!--https://vanillawebprojects.com/projects/movie-seat-booking/-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>movie seat booking</title>
+  </head>
+  <body>
+    <div class = "itembar">
+        <button class ="iconb" onclick="location.replace('http://127.0.0.1:5500/1.html') ">
+          <img src="photo/house.svg" class = "icon"/>
+        </button>
+        <button class ="iconb" onclick="location.replace('rr.html') ">
+          <img src="photo/info.svg" class = "icon" />
+        </button>
+        <button class ="iconb" onclick="location.replace('staff.html') ">
+          <img src="photo/people.svg" class = "icon" />
+        </button>
+    </div>
+    <div class="movie-container">
+      <label>選擇要前往的地點 : </label>
+      <select id="restaurant" onchange = "select()" value = "study-room">
+        <option value="none" selected disabled hidden>請選擇選項</option>
+        <option value="study-room">自習室</option>
+        <option value="mac">mac</option>
+      </select>
+    </div>
+    <div id = "selected-restaurant">
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Avaliable</small>
+      </li>
+      <li>
+        <div class="seat seatshow"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+    <div id = "table-container" class="seat-container">
+    </div>
+    <div class="section">
+      <input type="number" value="5" />
+      <br />
+      <input
+        type="button"
+        value="相鄰空位提醒"
+        class="button"
+        id=" nearbutton"
+      />
+      <br />
+      <input type="button" value="有空位提醒" class="button" />
+      <br />
+      <input
+        type="button"
+        value="吃什麼輪盤"
+        class="button"
+        onclick="location.replace('wheel.html') "
+      />
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

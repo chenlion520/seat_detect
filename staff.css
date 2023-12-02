@@ -1,0 +1,86 @@
+body{
+    background-color: darkslategray;
+    color: #fff;
+}
+.stafftable{
+    display: flex;
+    justify-content: center;
+}
+table{
+    font-size: small;
+    border-style:groove;
+}
+th{
+    border-style: groove;
+}
+
+.name{
+    width:50px;
+    height: auto;
+}
+
+.picture{
+    width: 120px;
+    height: 100px;
+}
+
+.percentage{
+    width: 50px;
+    height: auto;
+}
+
+.img{
+    width: auto;
+    height: 100px;
+}
+
+.itembar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+}
+
+.iconb{
+    border: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 2px;
+}
+
+#tips{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: groove;
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size:larger;
+    background: #346e7a;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+.daddy{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: xx-large;
+}
+
+a{
+    color: pink;
+}

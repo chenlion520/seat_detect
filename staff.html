@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Staff</title>
+        <link rel="stylesheet" href="staff.css" />
+    </head>
+    <body>
+        <div id="tips">這是拿來提示時間的</div> 
+        <div class = "itembar">
+            <button class ="iconb" onclick="location.replace('http://127.0.0.1:5500/1.html') ">
+              <img src="photo/house.svg" class = "icon"/>
+            </button>
+            <button class ="iconb" onclick="location.replace('rr.html') ">
+              <img src="photo/info.svg" class = "icon" />
+            </button>
+            <button class ="iconb" onclick="location.replace('staff.html') ">
+              <img src="photo/people.svg" class = "icon" />
+            </button>
+        </div>
+        <div class = "stafftable">
+            <table>
+                <tbody>
+                    <tr>
+                        <th class = "name">鄭亦揚</th>
+                        <th class = "picture"><img src="photo/LION.jpg" id = "LION" onmouseover='boxOver(this);' onmouseout="boxOut();"></th>
+                        <th class = "percent">22.5%</th>
+                    </tr>
+                    <tr>
+                        <th class = "name">劉胤賢</th>
+                        <th class = "picture"><img src="photo/YHL.jpg" id = "YHL" onmouseover='boxOver(this);' onmouseout="boxOut();"></th>
+                        <th class = "percent">22.5%</th>
+                    </tr>
+                    <tr>
+                        <th class = "name">吳乃元</th>
+                        <th class = "picture"><img src="photo/NYW.jpg" id = "NYW" onmouseover='boxOver(this);' onmouseout="boxOut();"></th>
+                        <th class = "percent">22.5%</th>
+                    </tr>
+                    <tr>
+                        <th class = "name">陳孟嶔</th>
+                        <th class = "picture"><img src="photo/MQC.jpg" id = "MQC" onmouseover='boxOver(this);' onmouseout="boxOut();"></th>
+                        <th class = "percent">22.5%</th>
+                    </tr>
+                    <tr>
+                        <th class = "name">林家安</th>
+                        <th class = "picture"><img src="photo/JAL.jpg" id = "JAL" onmouseover='boxOver(this);' onmouseout="boxOut();"></th>
+                        <th class = "percent">10%</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class = "daddy"><a href="photo/boss.jpg" target="_blank">who's your daddy?</a></div>
+    </body>
+    <script src = "staff.js"></script>
+</html>

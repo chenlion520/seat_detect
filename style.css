@@ -1,0 +1,201 @@
+body {
+  background-color: darkslategray;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.movie-container {
+  display: flex;
+  justify-content: center; /*弹性容器属性*/
+  align-items: center; /*弹性布局容器属性*/
+  width: 800px;
+  height: auto;
+  margin: 100px auto 0 auto;
+}
+.movie-container label {
+  color: white;
+  font-size: 18px;
+  margin-right: 5px;
+}
+#movie {
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+}
+#movie option {
+  padding: 5px;
+}
+
+.button {
+  border: 0;
+  background-color: #003c9d;
+  color: #fff;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: black;
+}
+
+.showcase {
+  background-color: olive;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 300px;
+  margin: 30px auto;
+  padding: 5px 10px;
+}
+.showcase li {
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.seat {
+  background-color: white;
+  width: 15px;
+  height: 12px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin: 0px 3px;
+}
+
+.seat-container {
+  perspective: 500px;
+}
+.table {
+  margin: 5px auto;
+  width: 50px;
+  height: 20px;
+  transform: rotateX(-28deg);
+  background-color: brown;
+  box-shadow: 0 3px 10px rgba(250, 246, 246, 0.7); /*0.7是不透明度*/
+}
+
+.table_long {
+  margin: 5px auto;
+  width: 20px;
+  height: 300px;
+  transform: rotateX(-28deg);
+  background-color: brown;
+  box-shadow: 0 3px 10px rgba(250, 246, 246, 0.7); /*0.7是不透明度*/
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.seat.occupied {
+  background-color: red;
+}
+.seat.selected {
+  background-color: green;
+}
+.seat.seatshow {
+  background-color: green;
+}
+/*不行，只有链接a能用visited，
+*.seat:not(.occupied):visited{
+*   background-color:seagreen;
+}*/
+.seat:not(.occupied):hover {
+  background-color: blue;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.seat:not(.occupied):active {
+  background-color: green;
+  cursor: pointer;
+}
+/* .seat:nth-last-of-type(3) {
+  margin-left: 58px;
+}
+.seat:nth-last-of-type(6) {
+  margin-left: 58px;
+} */
+.text {
+  color: aliceblue;
+  font-size: 18px;
+  margin: 5px auto;
+}
+#num {
+  color: salmon;
+  font-size: 18px;
+}
+#price {
+  color: salmon;
+  font-size: 18px;
+}
+
+.box{
+  position: relative;
+}
+#tips{
+  display: none;
+  position: absolute;
+  top: -50px;
+  left: 60px;
+  border-style: groove;
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  font-size:larger;
+  background: #346e7a;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.itembar{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+.icon{
+  height: 30px;
+  width: 30px;
+}
+
+.iconb{
+  border: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 2px;
+}
+
+#tips{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-style: groove;
+  width: 100px;
+  height: auto;
+  color: #fff;
+  font-size:larger;
+  background: #346e7a;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 10;
+}
+#selected-restaurant{
+  color: #fff;
+  font-size:larger;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
